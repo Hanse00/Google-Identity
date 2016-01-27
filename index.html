@@ -3,8 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Google Identity</title>
+    <meta name="google-signin-scope" content="profile">
+    <meta name="google-signin-client_id" content="361649156192-e4i4jdvr9lsm9q2b5h5mv5clv8ug0eng.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="script.js"></script>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <div id="g-id"></div>
+    <a href="#" onclick="signOut();">Sign Out</a>
   </body>
 </html>
